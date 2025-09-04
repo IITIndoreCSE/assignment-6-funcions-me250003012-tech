@@ -18,12 +18,15 @@ long long suffix = 1;
     
     for (int i = size - 1; i >= 0; i--) {
     output[i] *= suffix;
-    prefix *= arr[i];
+    suffix *= arr[i];
     
     }
     
     return output; 
-}
+    
+    }
+    
+    
 
 int main() {
     int n; cin >> n;
@@ -37,3 +40,4 @@ int main() {
 
     return 0;
 }
+
